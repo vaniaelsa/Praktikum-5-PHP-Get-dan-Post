@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> TUGAS 3 BIODATA </title>
+        <style type="text/css">
+            BODY {background-image: url("background.jpg"); 
+                  background-size: auto;
+                 }
+            H1   {text-align: center;
+                  font-family: tahoma;
+                  color:black;
+                  background-color: lightcoral;
+                 }
+        </style>
+    </head>
+
+    <body>
+        <h1> FORMULIR BIODATA </h1>
+        <!-- method post untuk mengirimkan nilai yg diinput di form 
+         ke halaman tugas3act.php -->
+        <form method="POST" action="tugas3act.php">
+            <table width="350" align="center" cellpadding="2" cellspacing="2">
+                <tr>
+                    <td width="130">Nama Lengkap</td>
+                    <!-- untuk menginput nama -->
+                    <td><input type="text" name="nama"></td>
+                </tr>
+                <tr>
+                    <td width="130">Jenis Kelamin</td>
+                    <!-- untuk menginput jenis kelamin -->
+                    <td>
+                    <input type="radio" name="jk" value="Laki-laki"> Laki- laki
+                    <input type="radio" name="jk" value="Perempuan"> Perempuan 
+                    </td>
+                </tr>
+                <tr>
+                    <td width="130">Agama</td>
+                    <td>
+                    <!-- opsi pilihan agama -->
+                    <select name="agama">
+                    <option value="kosong"> </option>
+                    <option value="Islam"> Islam</option>
+                    <option value="Kristen"> Kristen </option>
+                    <option value="Katholik"> Katholik </option>
+                    <option value="Hindhu"> Hindhu </option>
+                    </select> 
+                </td>
+                </tr>
+                <tr>
+                    <td width="130">Alamat</td>
+                    <!-- untuk menginput alamat -->
+                    <td><input type="text" name="alamat"></td>
+                </tr>
+                <tr>
+                    <td width="130">Universitas</td>
+                    <!-- untuk menginput universitas -->
+                    <td><input type="text" name="univ"></td>
+                </tr>
+                <tr>
+                    <td width="130">Email</td>
+                    <!-- menginput email -->
+                    <td><input type="text" name="email"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">
+                        <!-- tombol submit -->
+                        <input type="submit" name="btnLogin" value="Log In">
+                        <!-- tombol reset untuk mengembalikan keadaan form pada keadaan awal -->
+                        <input type="reset" name="reset" value="Reset">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> TUGAS 1 LOGIN POST </title>
+    </head>
+
+    <body>
+        <!-- method post untuk mengirimkan nilai yg diinput di form 
+         ke halaman tugas1act.php -->
+        <form method="POST" action="tugas1act.php">
+            <table width="300" align="center" cellpadding="2" cellspacing="2">
+                <tr>
+                    <td width="130">Nama</td>
+                    <!-- untuk menginput nama -->
+                    <td><input type="text" name="nama"></td>
+                </tr>
+                <tr>
+                    <td width="130">Email</td>
+                    <!-- menginput email -->
+                    <td><input type="text" name="email"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">
+                        <!-- tombol submit -->
+                        <input type="submit" name="btnLogin" value="Log In">
+                        <!-- tombol reset untuk mengembalikan keadaan form pada keadaan awal -->
+                        <input type="reset" name="reset" value="Reset">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>
